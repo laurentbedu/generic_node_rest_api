@@ -1,0 +1,4 @@
+@host = localhost:5000
+@table = app_user
+
+GET http://{{host}}/{{table}}

@@ -1,0 +1,25 @@
+{
+  "name": "generic_node_restfull_api",
+  "version": "0.1.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start:nodemon": "nodemon main.js",
+    "start:node": "node main.js",
+    "initialize": "node initialize.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.15"
+  }
+}

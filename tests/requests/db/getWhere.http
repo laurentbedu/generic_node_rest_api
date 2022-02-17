@@ -1,0 +1,10 @@
+@host = localhost:5000
+@table = app_user
+
+
+PATCH http://{{host}}/{{table}}
+Content-Type: application/json
+
+{
+    "where": "login = 'user@user.fr'"
+}

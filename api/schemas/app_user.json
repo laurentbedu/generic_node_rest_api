@@ -1,0 +1,51 @@
+{
+  "hasOne": {
+    "customer": {
+      "fk": "customer_id",
+      "column": "id",
+      "table": "customer"
+    },
+    "user_role": {
+      "fk": "user_role_id",
+      "column": "id",
+      "table": "user_role"
+    }
+  },
+  "hasMany": {
+    "mail_list": {
+      "fk": "id",
+      "column": "app_user_id",
+      "table": "mail"
+    }
+  },
+  "columns": {
+    "id": {
+      "type": "number",
+      "default": null
+    },
+    "login": {
+      "type": "string",
+      "default": null
+    },
+    "password": {
+      "type": "string",
+      "default": null
+    },
+    "token": {
+      "type": "string",
+      "default": null
+    },
+    "deleted": {
+      "type": "boolean",
+      "default": false
+    },
+    "customer_id": {
+      "type": "number",
+      "default": null
+    },
+    "user_role_id": {
+      "type": "number",
+      "default": null
+    }
+  }
+}
