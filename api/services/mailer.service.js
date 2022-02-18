@@ -28,7 +28,7 @@ class MailerService {
       auth: {
         user: senderAccount.user,
         pass: senderAccount.pass,
-      },
+      }
     });
 
     await transporter.sendMail(mailParams, (err, info) => {

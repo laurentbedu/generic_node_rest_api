@@ -5,6 +5,6 @@ POST http://{{host}}/auth/register
 Content-Type: application/json
 
 {
-    "email": "user2@user2.fr"
-    //"password": "user"
+    "email": "bedulaurent@gmail.fr",
+    "password": "azerty"
 }

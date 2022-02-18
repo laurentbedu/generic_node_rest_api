@@ -13,17 +13,17 @@ class DbController extends BaseController{
     initializeActions = () => {
       
         this.getAll = async () => {
-            const result = await this.service.selectWhere();
+            const result = await this.service.select();
             return result;
         }
 
         this.getOne = async (req) => {
-            const result = await this.service.selectWhere({where:`id=${req.params.id}`});
+            const result = await this.service.select({where:`id=${req.params.id}`});
             return result.length === 1 ? result.pop() : null;
         }
 
         this.getWhere = async (req) => {
-            const result = await this.service.selectWhere({where: req.body.where});
+            const result = await this.service.select({where: req.body.where});
             return result;
         }
 

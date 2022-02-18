@@ -40,7 +40,7 @@ class BaseModel{
     
 
     getProps = () => {
-        const properties = JSON.tryParse(JSON.stringify(this));
+        const properties = JSON.stringify(this).toJson();
         return properties
     }
 
